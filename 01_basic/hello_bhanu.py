@@ -2,20 +2,21 @@
 
 
 def userName(name, age):
-  print(f"my name is {name} and my age is {age}")
+    print(f"my name is {name} and my age is {age}")
+
 
 chai_one = "lemon tea"
 chai_two = "ginger tea"
 
 
-# ! repr , str, print 
+# ! repr , str, print
 # print(repr(chai_one))
 # print(str(chai_two))
 # print(chai_one)
 
 
 # * String
-numList = '0123456789'
+numList = "0123456789"
 
 # print(numList[:])
 # print(numList[3:])
@@ -89,12 +90,107 @@ newChai = "     ginger chai  "
 # print(data)
 
 # drive  = r"c:\user\pwd"
-# drive  = "c:\user\pwd" 
+# drive  = "c:\user\pwd"
 # solution of above line without raw
 # drive1 = "c:\\user\\pwd" # correct
 # print(drive1)
 
 
-chai = "masala chai"
-print('masala' in chai) # true
-print('masalaaa' in chai) # false
+# chai = "masala chai"
+# print('masala' in chai) # true
+# print('masalaaa' in chai) # false
+
+
+# //! List or Array
+
+# a = [1, 2, 3, 4, 5]
+# b = ["apple", "banana", "cherry"]
+# c = [1, "hello", 3.14, True]
+
+# print(a)
+# print(b)
+# print(c)
+
+
+# a = list((1, 2, 3, "apple", 4.5))
+# print(a)
+# b = list("GFG")
+# print(b)
+
+
+# a = [2] * 5
+# b = [0] * 7
+
+# print(a)
+# print(b)
+
+
+# a = [10, 20, 30, 40, 50]
+# print(a[0])
+# print(a[-1])
+# print(a[1:4])   # elements from index 1 to 3
+
+
+# //* Adding Elements into List [append, extend, insert, clear]
+
+# a = []
+# a.append(10)
+# print("After append(10):", a)
+
+# a.insert(0, 5)
+# print("After insert(0, 5):", a)
+
+# a.extend([15, 20, 25])
+# print("After extend([15, 20, 25]):", a)
+
+# a.clear()
+# print("After clear():", a)
+
+# //? Updating Elements into List
+# a = [10, 20, 30, 40, 50]
+# a[1] = 25
+# print(a)
+
+
+# //? Removing Elements into List [remove , pop, del]
+
+
+# a = [10, 20, 30, 40, 50]
+
+# a.remove(30)
+# print("After remove(30):", a)
+
+# popped_val = a.pop(1)
+# print("Popped element:", popped_val)
+# print("After pop(1):", a)
+
+# del a[0]
+# print("After del a[0]:", a)
+
+# print(a)
+
+
+# //? Iterating Over Lists
+
+# a = ['apple', 'banana', 'cherry']
+# for item in a:
+#     print(item)
+
+# //? Nested Lists
+# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# print(matrix[1][2])
+
+
+# //? List Comprehension
+# //* List comprehension is a concise way to create lists using a single line of code. It is useful for applying an operation or filter to items in an iterable, such as a list or range.
+
+squares = [x**2 for x in range(1, 6)]
+print(squares)
+
+""" 
+Explanation:
+
+for x in range(1, 6): loops through each number from 1 to 5 (excluding 6).
+x**2: squares each number x.
+[ ]: collects all the squared numbers into a new list.
+"""
