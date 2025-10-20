@@ -1,12 +1,12 @@
 # print("Bhanu Pratap")
 
 
-def userName(name, age):
-    print(f"my name is {name} and my age is {age}")
+# def userName(name, age):
+#     print(f"my name is {name} and my age is {age}")
 
 
-chai_one = "lemon tea"
-chai_two = "ginger tea"
+# chai_one = "lemon tea"
+# chai_two = "ginger tea"
 
 
 # ! repr , str, print
@@ -184,8 +184,8 @@ newChai = "     ginger chai  "
 # //? List Comprehension
 # //* List comprehension is a concise way to create lists using a single line of code. It is useful for applying an operation or filter to items in an iterable, such as a list or range.
 
-squares = [x**2 for x in range(1, 6)]
-print(squares)
+# squares = [x**2 for x in range(1, 6)]
+# print(squares)
 
 """ 
 Explanation:
@@ -194,3 +194,58 @@ for x in range(1, 6): loops through each number from 1 to 5 (excluding 6).
 x**2: squares each number x.
 [ ]: collects all the squared numbers into a new list.
 """
+
+
+#! Dictionary
+
+chai_types = {"masala": "spicy", "Ginger": "Zesty", "Green": "mild"}
+# print(chai_types)
+# print(chai_types["masala"])
+# print(chai_types.get("Green"))
+# chai_types["Green"] = "Fresh"
+# print(chai_types['Green'])
+
+# for chai in chai_types:
+#    print(chai)
+
+
+# for chai in chai_types:
+#    print(chai, chai_types[chai])
+
+# for key, value in chai_types.items():
+#    print(key, value)
+
+# if "Ginger" in chai_types:
+#     print("Yes we have Ginger tea")
+# else:
+#     print("No , we dont have")
+
+
+# print(len(chai_types))
+
+# chai_types["Earl Grey"] = "Citrus"
+# print(chai_types)
+
+# popped_item = chai_types.pop("Ginger")
+# print("Popped item:", popped_item)
+
+# popped_item = chai_types.popitem()
+# print("Popped item:", popped_item)
+
+# #? Dictionary inside Dictionary example
+# example_dict = {
+#     "name": "John Doe",
+#     "age": 25,
+#     "address": {
+#         "street": "123 Main St",
+#         "city": "New York",
+#         "state": "NY"
+#     }
+# }
+# print(example_dict["address"]["city"])
+
+
+# squared_num = {x:x**2 for x in range(10)}
+# print(squared_num)
+# squared_num.clear()
+# print(squared_num)
