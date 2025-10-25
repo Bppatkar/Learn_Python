@@ -252,3 +252,15 @@ chai_types = {"masala": "spicy", "Ginger": "Zesty", "Green": "mild"}
 
 
 # ! Tuple
+tea_types = ("Black", "Green", "Oolong")
+# print(tea_types)
+# print(tea_types[-1])
+# print(tea_types[0:2])
+
+# ? u cant change the value
+# tea_types[2] = 'Lemon'
+# //'tuple' object does not support item assignment [because it is immutable]
+
+more_tea = ("Herbal", "Earl Grey")
+all_tea = more_tea + tea_types
+# print(all_tea)
