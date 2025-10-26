@@ -1,5 +1,5 @@
-species = "dog"  # Change this to "cat" for testing with a cat
-age = 3.5  # Change this value to test different ages
+species = input("Enter pet species (dog/cat): ").lower()
+age = float(input("Enter pet age: "))
 
 if species == "dog":
     if age < 2:
